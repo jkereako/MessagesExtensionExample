@@ -63,13 +63,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36247A011DA6CAD000C9FC17 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3640DE971DA6C81D008EA590 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		36247A021DA6CADB00C9FC17 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3640DE901DA6C81D008EA590 /* MessagesViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		36247A031DA6CAE200C9FC17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3640DE951DA6C81D008EA590 /* Assets.xcassets */,
+				3640DE921DA6C81D008EA590 /* MainInterface.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36247A041DA6CAF700C9FC17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3640DE811DA6C81D008EA590 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3640DE771DA6C81D008EA590 = {
 			isa = PBXGroup;
 			children = (
-				3640DE801DA6C81D008EA590 /* MessagesExtensionExample */,
-				3640DE8F1DA6C81D008EA590 /* MessagesExtension */,
 				3640DE8C1DA6C81D008EA590 /* Frameworks */,
+				3640DE8F1DA6C81D008EA590 /* MessagesExtension */,
 				3640DE7F1DA6C81D008EA590 /* Products */,
+				36247A041DA6CAF700C9FC17 /* Resources */,
+				3640DE801DA6C81D008EA590 /* SupportFiles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,13 +116,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3640DE801DA6C81D008EA590 /* MessagesExtensionExample */ = {
+		3640DE801DA6C81D008EA590 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				3640DE811DA6C81D008EA590 /* Assets.xcassets */,
 				3640DE831DA6C81D008EA590 /* Info.plist */,
 			);
-			path = MessagesExtensionExample;
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 		3640DE8C1DA6C81D008EA590 /* Frameworks */ = {
@@ -102,10 +135,9 @@
 		3640DE8F1DA6C81D008EA590 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				3640DE901DA6C81D008EA590 /* MessagesViewController.swift */,
-				3640DE921DA6C81D008EA590 /* MainInterface.storyboard */,
-				3640DE951DA6C81D008EA590 /* Assets.xcassets */,
-				3640DE971DA6C81D008EA590 /* Info.plist */,
+				36247A031DA6CAE200C9FC17 /* Resources */,
+				36247A021DA6CADB00C9FC17 /* Source */,
+				36247A011DA6CAD000C9FC17 /* SupportFiles */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
@@ -233,6 +265,7 @@
 				3640DE931DA6C81D008EA590 /* Base */,
 			);
 			name = MainInterface.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -375,7 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				INFOPLIST_FILE = MessagesExtension/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MessagesExtensionExample.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,7 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				INFOPLIST_FILE = MessagesExtension/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MessagesExtensionExample.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -402,7 +435,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MessagesExtensionExample/Info.plist;
+				INFOPLIST_FILE = SupportFiles/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MessagesExtensionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -415,7 +448,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MessagesExtensionExample/Info.plist;
+				INFOPLIST_FILE = SupportFiles/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MessagesExtensionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -442,6 +475,7 @@
 				3640DE9C1DA6C81D008EA590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3640DE9E1DA6C81D008EA590 /* Build configuration list for PBXNativeTarget "MessagesExtensionExample" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +484,7 @@
 				3640DEA01DA6C81D008EA590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
