@@ -10,6 +10,9 @@ import UIKit
 import Messages
 
 final class MessagesViewController: MSMessagesAppViewController {
+    @IBAction func buttonAction(_ sender: UIButton) {
+        activeConversation?.insertText("Something cool")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
