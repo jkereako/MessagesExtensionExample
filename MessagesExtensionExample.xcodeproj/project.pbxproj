@@ -99,8 +99,8 @@
 		3640DE771DA6C81D008EA590 = {
 			isa = PBXGroup;
 			children = (
+				3640DE8F1DA6C81D008EA590 /* Extension */,
 				3640DE8C1DA6C81D008EA590 /* Frameworks */,
-				3640DE8F1DA6C81D008EA590 /* MessagesExtension */,
 				3640DE7F1DA6C81D008EA590 /* Products */,
 				36247A041DA6CAF700C9FC17 /* Resources */,
 				3640DE801DA6C81D008EA590 /* SupportFiles */,
@@ -132,14 +132,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3640DE8F1DA6C81D008EA590 /* MessagesExtension */ = {
+		3640DE8F1DA6C81D008EA590 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				36247A031DA6CAE200C9FC17 /* Resources */,
 				36247A021DA6CADB00C9FC17 /* Source */,
 				36247A011DA6CAD000C9FC17 /* SupportFiles */,
 			);
-			path = MessagesExtension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,7 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				INFOPLIST_FILE = MessagesExtension/SupportFiles/Info.plist;
+				INFOPLIST_FILE = Extension/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MessagesExtensionExample.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,7 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				INFOPLIST_FILE = MessagesExtension/SupportFiles/Info.plist;
+				INFOPLIST_FILE = Extension/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.MessagesExtensionExample.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
